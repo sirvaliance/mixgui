@@ -262,10 +262,11 @@ function pathExists(sPath){
 
 function showPrefs()
 {
-	var oReturn = {in: null, out:null};
+
+	//var oReturn = {in: null, out:null};
         var oPrefs = window.openDialog("chrome://gui/content/mixPreferences.xul", "Mixminion Preferences", 
-				       "modal, toolbar,location=yes, menubar=no,top=100, left=100px,width=100cm",oReturn);
-	return oReturn.out.bValue;
+				       "modal, toolbar,location=yes, menubar=no,top=100, left=100px");
+	//return oReturn.out.bValue;
 }
 
 function getLogFile(){
@@ -447,10 +448,10 @@ function getMixPathToPrefs(){
     if(prefs.prefHasUserValue("mixminionPath")) {
 	// If the preference has bben set
 	// getting mixminion path preference.
-	sPath = prefs.getCharPref("mixminionPath"); 
+        sPath = prefs.getCharPref("mixminionPath"); 
     }else{
 	// set an empty mixminion path preference.
-	setMixPathToPrefs(sPath);
+        //setMixPathToPrefs(sPath);
     }
     return sPath;
 }
@@ -729,10 +730,12 @@ function pathExists(sPath){
 
 function showPrefs()
 {
-	var oReturn = {in: null, out:null};
+	//var oReturn = {in: null, out:null};
         var oPrefs = window.openDialog("chrome://gui/content/mixPreferences.xul", "Mixminion Preferences", 
-				       "modal, toolbar,location=yes, menubar=no,top=100, left=100px,width=100cm",oReturn);
-	return oReturn.out.bValue;
+				   "modal, toolbar,location=yes, menubar=no,top=100, left=100px");
+
+
+	//return oReturn.out.bValue;
 }
 
 function getLogFile(){

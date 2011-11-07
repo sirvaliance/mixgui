@@ -10,7 +10,7 @@
 	title="Mixgui preferences"
 	ondialogaccept="return acceptHandler();"
 	width="400"
-	height="120"
+	height="160"
 	onload="init();"
 	onunload="return closeHandler();">
 
@@ -29,7 +29,7 @@
 	      <hbox>
 		<textbox id="txtMixPath" 
 			 flex="1"
-			 disabled="false"/>
+			 />
 		<button id="btnMixPath"
 			label="Browse..."              
 			toolbarmode="small"
@@ -38,17 +38,6 @@
 			width="20"/>		
 	      </hbox>
 	  </groupbox>
-<!-- 	  <groupbox> -->
-<!-- 	     <caption label="Send options"/> -->
-	    
-<!-- 	      <hbox> -->
-<!-- 		<checkbox id="ckbSurb"  -->
-<!-- 			  checked="true" -->
-<!-- 			  label="Attach SURB"			 -->
-<!-- 			  onclick="ckbSurbClickHandler()"></checkbox> -->
-<!-- 	      </hbox> -->
-<!-- 	  </groupbox> -->
       </vbox>
 
-<!-- read enigmail/ui/content/pref-enigmail.xul -->
 </dialog>
